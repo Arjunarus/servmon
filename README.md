@@ -46,3 +46,6 @@ So you need to change this constants on every windows version:
 - $UPTIME_SECONDS_COUNTER_ID - this id is for "Elapsed Time"
 
 Use GetIds.ps1 script to know proper IDs.
+
+Script can be easily expanded to check any another threshold from available counters.
+Just use Get-ThresholdViolatorProcList with wanted counter ID and threshold, then transform the result in readable text with Format-ViolatorsToText.
